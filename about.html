@@ -1,0 +1,135 @@
+---
+layout: page
+title: "About"
+description: "我心北望, 划地为痕"
+header-img: "img/home-bg-xingkong.jpg"
+---
+
+<!-- Language Selector -->
+<!-- <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+    <option value="0" selected> 中文 Chinese </option>
+    <option value="1"> 英文 English </option>
+</select> -->
+
+<!-- Chinese Version -->
+<div class="zh post-container">
+
+	<!--copied from markdown -->
+	<blockquote>
+		<p>
+            混沌未分天地乱, 茫茫渺渺无人间
+            <br>
+            预知造化会源功, 那就来看我<a href="https://rainbomsea.github.io">博客</a>
+        </p>
+	</blockquote>
+
+	<p>
+		我们总能找到奋斗的理由, 却找不到坚持这份奋斗的心.三分钟热度, 说的总是我们自己啊.
+		<br>
+		---- 自讽
+	</p>
+
+	<p>
+		“就像牛人看普通人庸庸碌碌是浪费生命，普通人看牛人各种卓越追求就是折磨自己。轰轰烈烈的一生就比平平淡淡的一生更有意义吗？这完全是取决于个人价值观而已。轰轰烈烈的一生绝对不比平平淡淡的一生更有意义，但轰轰烈烈的一生让你更多的可能性，有能力和资本去体验这个世界中完全不同的生活方式，让你有选择的能力，一种生活过腻了可以换一种。而普通人过平平淡淡的生活，就没有能力做这种选择或比较弱，生活过腻了的时候，只能延续着以前的轨迹没办法换。”
+		<br/>
+		---- <a href="https://www.liuchuo.net/archives/category/book">读自柳婼大神的读思摘评</a>
+	</p>
+
+	<p>
+		我们不干平凡，但现实接纳不了我们木讷的天性，所以我们迷上网络，只为展现自己的内心的狂野和那熊熊烈火般的渴望....
+		<br/>
+		---- 来自网络
+	</p>
+
+	<p>
+		<strong>黑夜如约而至, 我们也要学会拾阶而行</strong>
+		<br/>
+		---- 共勉
+	</p>
+
+</div>
+
+<!-- Gitalk 评论 start  -->
+{% if site.gitalk.enable %}
+<!-- Gitalk link  -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+<script type="text/javascript">
+	var gitalk = new Gitalk({
+		clientID: '{{site.gitalk.clientID}}',
+		clientSecret: '{{site.gitalk.clientSecret}}',
+		repo: '{{site.gitalk.repo}}',
+		owner: '{{site.gitalk.owner}}',
+		admin: ['{{site.gitalk.admin}}'],
+		distractionFreeMode: {{site.gitalk.distractionFreeMode}},
+		id: 'about',
+	});
+	gitalk.render('gitalk-container');
+</script>
+{% endif %}
+<!-- Gitalk end -->
+
+
+
+<!-- English Version -->
+<!-- <div class="en post-container">
+    <blockquote><p>Yet another iOS Developer. <br>
+    Yet another Life-long Student.</p></blockquote>
+
+    <p>Hi, I am <strong>Baiying Qiu</strong>，you can call me <strong>BY</strong>. I am an iOS software engineer and currently working in Xiamen</p>
+
+    <p>This is my personal blog, through making Github Pages and Jekyll.My GitHub  👉 <a href="http://github.com/qiubaiying">Github·BY</a>.</p>
+
+    <p>I am a sports enthusiast, I like fitness, running and boxing.</p>
+
+    <h5>Talks</h5>
+
+    <ul>
+    <li><a href="https://github.com">GitHub</a></li>
+    <li><a href="http://jekyll.com.cn/">jekyll</a></li>
+    <li><a href="https://pages.github.com/">GitHub Pages</a></li>
+    <li><a href="https://qiubaiying.github.io">BY</a></li>
+    </ul>
+</div> -->
+
+<!-- Handle Language Change -->
+<!-- <script type="text/javascript">
+	// get nodes
+	var $zh = document.querySelector(".zh");
+	var $en = document.querySelector(".en");
+	var $select = document.querySelector("select");
+
+	// bind hashchange event
+	window.addEventListener('hashchange', _render);
+
+	// handle render
+	function _render() {
+		var _hash = window.location.hash;
+		// en
+		if (_hash == "#en") {
+			$select.selectedIndex = 1;
+			$en.style.display = "block";
+			$zh.style.display = "none";
+			// zh by default
+		} else {
+			// not trigger onChange, otherwise cause a loop call.
+			$select.selectedIndex = 0;
+			$zh.style.display = "block";
+			$en.style.display = "none";
+		}
+	}
+
+	// handle select change
+	function onLanChange(index) {
+		if (index == 0) {
+			window.location.hash = "#zh"
+		} else {
+			window.location.hash = "#en"
+		}
+	}
+
+	// init
+	_render();
+</script> -->
