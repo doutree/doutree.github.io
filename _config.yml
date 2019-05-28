@@ -4,7 +4,7 @@ SEOTitle: Doutree的博客 | Doutree
 header-img: img/home-bg-he.png
 email: me@wangxuelin.top
 description: "Doutree的博客"
-keyword: "Doutree, Doutree的博客, rainbom sea, Doutree, Python blog"
+keyword: "Doutree, Doutree, BigData blog"
 url: "http://doutree.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/doutree/doutree.github.io.git" #code repository | 代码仓库
@@ -92,7 +92,7 @@ friends: [
         href: "http://doutree.github.io"
     },{
         title: "CSDN·Doutree",
-        href: "https://blog.csdn.net/ qq_36459481"
+        href: "https://blog.csdn.net/qq_36459481"
     },{
         title: "知乎·Doutree",
         href: "https://www.zhihu.com/people/ao-tu-h2o"
