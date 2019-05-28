@@ -12,7 +12,7 @@ github_repo: "https://github.com/doutree/doutree.github.io.git" #code repository
 
 # Sidebar settings | 侧边栏设置
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "就算这样,也要笑着去努力啊!"
+sidebar-about-description: "侧边栏设置!"
 sidebar-avatar: /img/head.jpg      # 头像
 
 
@@ -20,7 +20,7 @@ sidebar-avatar: /img/head.jpg      # 头像
 
 
 # SNS settings | 社交网络设置
-facebook_username: Doutree
+# facebook_username: Doutree
 github_username: doutree
 zhihu_username: ao-tu-h2o
 csdn_username: qq_36459481
@@ -89,6 +89,22 @@ service-worker: true
 
 
 # Friends
+# friends: [
+#     {
+#         title: "GitHub·Doutree",
+#         href: "http://doutree.github.io"
+#     },{
+#         title: "CSDN·Doutree",
+#         href: "https://blog.csdn.net/ qq_36459481"
+#     },{
+#         title: "知乎·Doutree",
+#         href: "https://www.zhihu.com/people/ao-tu-h2o"
+#     },{
+#         title: "GitBook·Doutree",
+#         href: "https://legacy.gitbook.com/@Doutree"
+#     }
+# ]
+
 friends: [
     {
         title: "GitHub·Doutree",
@@ -99,8 +115,5 @@ friends: [
     },{
         title: "知乎·Doutree",
         href: "https://www.zhihu.com/people/ao-tu-h2o"
-    },{
-        title: "GitBook·Doutree",
-        href: "https://legacy.gitbook.com/@Doutree"
     }
 ]
