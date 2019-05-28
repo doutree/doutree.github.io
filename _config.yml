@@ -12,7 +12,7 @@ github_repo: "https://github.com/doutree/doutree.github.io.git" #code repository
 
 # Sidebar settings | 侧边栏设置
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "侧边栏设置!"
+sidebar-about-description: "不是很呆D"
 sidebar-avatar: /img/head.jpg      # 头像
 
 
@@ -24,7 +24,7 @@ sidebar-avatar: /img/head.jpg      # 头像
 github_username: doutree
 zhihu_username: ao-tu-h2o
 csdn_username: qq_36459481
-
+weibo_username: 3607512703
 
 
 
@@ -115,5 +115,8 @@ friends: [
     },{
         title: "知乎·Doutree",
         href: "https://www.zhihu.com/people/ao-tu-h2o"
+    },{
+        title: "微博·Doutree",
+        href: "https://weibo.com/u/3607512703"
     }
 ]
