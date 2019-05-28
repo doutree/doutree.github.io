@@ -12,7 +12,7 @@ github_repo: "https://github.com/doutree/doutree.github.io.git" #code repository
 
 # Sidebar settings | 侧边栏设置
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "不是很呆D"
+sidebar-about-description: "大三在校生一枚，数据挖掘方向！"
 sidebar-avatar: /img/head.jpg      # 头像
 
 
@@ -24,7 +24,6 @@ sidebar-avatar: /img/head.jpg      # 头像
 github_username: doutree
 zhihu_username: ao-tu-h2o
 csdn_username: qq_36459481
-weibo_username: 3607512703
 
 
 
@@ -63,7 +62,7 @@ gitalk:
   enable: false    # 是否开启Gitalk评论
   clientID: 1675c22923c74e399e8e                            #生成的clientID
   clientSecret: 9d7a97297ac73a483211f95a15197d8f53039a80    #生成的clientSecret
-  repo: Doutree.github.io    #仓库名称
+  repo: doutree.github.io    #仓库名称
   owner: Doutree    # github用户名
   admin: Doutree
   distractionFreeMode: true # 是否启用类似FB的阴影遮罩
@@ -86,25 +85,7 @@ featured-condition-size: 0              # 相同标签数量大于这个数，�
 chrome-tab-theme-color: "#000000"
 service-worker: true
 
-
-
 # Friends
-# friends: [
-#     {
-#         title: "GitHub·Doutree",
-#         href: "http://doutree.github.io"
-#     },{
-#         title: "CSDN·Doutree",
-#         href: "https://blog.csdn.net/ qq_36459481"
-#     },{
-#         title: "知乎·Doutree",
-#         href: "https://www.zhihu.com/people/ao-tu-h2o"
-#     },{
-#         title: "GitBook·Doutree",
-#         href: "https://legacy.gitbook.com/@Doutree"
-#     }
-# ]
-
 friends: [
     {
         title: "GitHub·Doutree",
@@ -116,7 +97,7 @@ friends: [
         title: "知乎·Doutree",
         href: "https://www.zhihu.com/people/ao-tu-h2o"
     },{
-        title: "微博·Doutree",
+        title: "微博·不是很呆D",
         href: "https://weibo.com/u/3607512703"
     }
 ]
