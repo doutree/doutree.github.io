@@ -89,7 +89,7 @@ service-worker: true
 friends: [
     {
         title: "GitHub·Doutree",
-        href: "http://doutree.github.io"
+        href: "https://github.com/doutree"
     },{
         title: "CSDN·Doutree",
         href: "https://blog.csdn.net/qq_36459481"
