@@ -4,7 +4,7 @@ SEOTitle: 不是很呆D Blog
 header-img: img/home-bg-he.png
 email: me@wangxuelin.top
 description: "不是很呆D的博客"
-keyword: "Doutree, Lunn, BigData blog"
+keyword: "Doutree, Lunn, Blog"
 url: "http://doutree.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/doutree/doutree.github.io.git" #code repository | 代码仓库
@@ -12,7 +12,7 @@ github_repo: "https://github.com/doutree/doutree.github.io.git" #code repository
 
 # Sidebar settings | 侧边栏设置
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "大四在校生一枚，大数据方向！"
+sidebar-about-description: "NLPer"
 sidebar-avatar: /img/head.jpg      # 头像
 
 
@@ -22,7 +22,7 @@ sidebar-avatar: /img/head.jpg      # 头像
 # SNS settings | 社交网络设置
 # facebook_username: Doutree
 github_username: doutree
-zhihu_username: ao-tu-h2o
+# zhihu_username: ao-tu-h2o
 csdn_username: qq_36459481
 
 
@@ -93,11 +93,5 @@ friends: [
     },{
         title: "CSDN·Doutree",
         href: "https://blog.csdn.net/qq_36459481"
-    },{
-        title: "知乎·不是很呆D",
-        href: "https://www.zhihu.com/people/ao-tu-h2o"
-    },{
-        title: "微博·不是很呆D",
-        href: "https://weibo.com/u/3607512703"
     }
 ]
