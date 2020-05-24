@@ -11,7 +11,7 @@ github_repo: "https://github.com/doutree/doutree.github.io.git" #code repository
 
 
 # Sidebar settings | 侧边栏设置
-sidebar: true                           # whether or not using Sidebar.
+sidebar: false                           # whether or not using Sidebar.
 sidebar-about-description: "NLPer"
 sidebar-avatar: /img/head.jpg      # 头像
 
@@ -88,10 +88,10 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "GitHub·Doutree",
+        title: "GitHub·doutree",
         href: "https://github.com/doutree"
     },{
-        title: "CSDN·Doutree",
+        title: "CSDN·不是很呆",
         href: "https://blog.csdn.net/qq_36459481"
     }
 ]
