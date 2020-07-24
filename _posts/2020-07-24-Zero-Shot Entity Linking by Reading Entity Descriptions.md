@@ -16,11 +16,11 @@ tags:
 
 Lajanugen Logeswaran, Ming-Wei Chang, Kenton Lee, Kristina Toutanova, Jacob Devlin, Honglak Lee
 
-##摘要
+#### 摘要
 
 本文提出了一项称为零击实体链接（zero-shot entity linking）的新任务，在这项任务中，必须将mention链接链接到没有域内标记数据的未见实体，他们还提出了一种称为域自适应预训练（domain adaptive pre-training，DAP）的自适应预训练策略，来解决该域与在新域中链接未见实体相关的转移问题。
 
-## 介绍
+#### 介绍
 
 - 先前有关实体链接的工作通常使用功能强大的资源，例如高覆盖率别名表，结构化数据和链接频率统计信息，并且还专注于链接到通用实体数据库。本文没有使用任何此类资源，并且着重于泛化到未见特殊实体。
 
@@ -37,7 +37,7 @@ Lajanugen Logeswaran, Ming-Wei Chang, Kenton Lee, Kristina Toutanova, Jacob Devl
 
 
 
-## 模型
+#### 模型
 
 - 他们采用两步模型进行实体链接，首先是快速候选者生成阶段，该模型使用BM25（TF-IDF的一种变体）来测量mention字符串和候选文档之间的相似度，并获取前k个实体。
 - 第二步是对这些实体进行排名，使用在阅读理解和自然语言推理任务方面很强的模型来比较上下文mention（mention in context）和候选实体描述（candidate entity description），如Transformers。
@@ -57,12 +57,12 @@ Lajanugen Logeswaran, Ming-Wei Chang, Kenton Lee, Kristina Toutanova, Jacob Devl
 
 - 在所有这三种方法中，最后都在源域标记的数据上对该模型进行了微调，他们还将这些方法结合在一起以进一步提高性能。
 
-## 阅读参考资料
+#### 阅读参考资料
 
-##### 实体链接介绍
+###### 实体链接介绍
 
 https://zhuanlan.zhihu.com/p/81073607
 
-##### BERT介绍
+###### BERT介绍
 
 https://zhuanlan.zhihu.com/p/54356280
