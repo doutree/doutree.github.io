@@ -33,7 +33,7 @@ Lajanugen Logeswaran, Ming-Wei Chang, Kenton Lee, Kristina Toutanova, Jacob Devl
 
 - 他们假设目标实体存在于实体字典中，并留下NIL未解决（如果知识库中没有某一mention对应的实体项，则认为该mention不可链接到当前知识库，标记为NIL）
 
-![image-20200530154734548](assets/image-20200530154734548.png)
+![image-20200530154734548](../assets/image-20200530154734548.png)
 
 
 
