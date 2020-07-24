@@ -1,9 +1,9 @@
 ---
 layout:		post
 title:		Zero-Shot Entity Linking by Reading Entity Descriptions
-subtitle:	本文提出了一项称为零击实体链接（zero-shot entity linking）的新任务，在这项任务中，必须将mention链接链接到没有域内标记数据的未见实体，他们还提出了一种称为域自适应预训练（domain adaptive pre-training，DAP）的自适应预训练策略，来解决该域与在新域中链接未见实体相关的转移问题。
+subtitle:	
 date:       2020-07-24
-author:     Doutree
+author:     doutree
 header-img: img/post-web.jpg
 catalog: true
 tags:
@@ -34,8 +34,6 @@ Lajanugen Logeswaran, Ming-Wei Chang, Kenton Lee, Kristina Toutanova, Jacob Devl
 - 他们假设目标实体存在于实体字典中，并留下NIL未解决（如果知识库中没有某一mention对应的实体项，则认为该mention不可链接到当前知识库，标记为NIL）
 
 ![image-20200530154734548](/assets/image-20200530154734548.png)
-
-1
 
 #### 模型
 
