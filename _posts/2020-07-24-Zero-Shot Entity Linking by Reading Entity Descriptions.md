@@ -33,7 +33,7 @@ Lajanugen Logeswaran, Ming-Wei Chang, Kenton Lee, Kristina Toutanova, Jacob Devl
 
 - 他们假设目标实体存在于实体字典中，并留下NIL未解决（如果知识库中没有某一mention对应的实体项，则认为该mention不可链接到当前知识库，标记为NIL）
 
-![image-20200530154734548](./assets/image-20200530154734548.png)
+![image-20200530154734548](assets/image-20200530154734548.png)
 
 
 
@@ -45,7 +45,7 @@ Lajanugen Logeswaran, Ming-Wei Chang, Kenton Lee, Kristina Toutanova, Jacob Devl
 
 - 他们表明，这种深层次的cross-attention模型优于以前方法，如“ Pool-Transformer”和“ Cand-Pool-Transformer ”，这些方法没有以类似的方式使用cross-attention。
 
-## DAP
+#### DAP
 
 - 他们还以无监督的方式对不同的数据集进行了模型预训练，以改善进一步的任务。他们回顾了以前的两种方法，并提出了一种新的方法DAP（Domain-adaptive pre-training）。
 
