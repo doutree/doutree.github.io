@@ -3,7 +3,7 @@ layout:		post
 title:		Zero-Shot Entity Linking by Reading Entity Descriptions note
 subtitle:	
 date:       2020-07-24
-author:     doutree
+author:     xuelin
 header-img: img/post-web.jpg
 catalog: true
 tags:
