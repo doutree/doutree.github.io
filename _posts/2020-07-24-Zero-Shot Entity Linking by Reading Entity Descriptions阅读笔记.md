@@ -1,6 +1,6 @@
 ---
 layout:		post
-title:		Zero-Shot Entity Linking by Reading Entity Descriptions note
+title:		Zero-Shot Entity Linking by Reading Entity Descriptions笔记
 subtitle:	
 date:       2020-07-24
 author:     xuelin
