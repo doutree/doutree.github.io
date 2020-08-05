@@ -1,6 +1,6 @@
 ---
 layout:		post
-title:		Zero-Shot Entity Linking by Reading Entity Descriptions笔记
+title:		Zero-Shot Entity Linking by Reading Entity Descriptions阅读笔记
 subtitle:	
 date:       2020-07-24
 author:     xuelin
@@ -12,7 +12,9 @@ tags:
 
 # Zero-Shot Entity Linking by Reading Entity Descriptions
 
-论文地址：https://arxiv.org/abs/1906.07348
+[Logeswaran L, Chang M W, Lee K, et al. Zero-shot entity linking by reading entity descriptions[J]. arXiv preprint arXiv:1906.07348, 2019.](https://arxiv.org/abs/1906.07348)
+
+
 
 ### 摘要
 

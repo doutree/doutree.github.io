@@ -1,6 +1,6 @@
 ---
 layout:		post
-title:      AutoML：A Survey of the State-of-the-Art笔记
+title:      AutoML：A Survey of the State-of-the-Art阅读笔记
 subtitle:	
 date:       2020-07-31
 author:     xuelin
@@ -14,7 +14,7 @@ tags:
 
 # AutoML: A Survey of the State-of-the-Art
 
-论文地址：https://arxiv.org/abs/1908.00709
+[He X, Zhao K, Chu X. AutoML: A Survey of the State-of-the-Art[J]. arXiv preprint arXiv:1908.00709, 2019.](https://arxiv.org/abs/1908.00709)
 
 ### 1. 介绍
 
@@ -110,3 +110,7 @@ AutoML Pipeline 框架图
 - Joint Hyperparameter and Architecture Optimization
 - Complete AutoML Pipeline
 - Lifelong Learning
+
+### Reference
+
+[marsggbo知乎](https://zhuanlan.zhihu.com/p/158162306)

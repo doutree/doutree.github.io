@@ -37,7 +37,9 @@ TPOT的优势在于其独特的优化方法，可以提供更有效的优化流�
 ![](/assets/15962464646167.jpg)
 
 相关链接
+
 GitHub库：https://github.com/EpistasisLab/tpot
+
 userguide：http://epistasislab.github.io/tpot
 
 ### 4. H2O
@@ -84,6 +86,12 @@ Auto_ML是一种实用工具，旨在提高从数据中获取的信息量，且�
 
 https://github.com/ClimbsRocks/auto_ml
 
+### 9. ATM
+
+Auto-Tune Models是麻省理工学院HDI项目开发出的框架，可用于机器学习模型的快速训练，仅需很小的工作量。
+
+它使用贝叶斯优化和Bandits库，利用穷举搜索和超参数优化来实现模型选择。要注意，ATM仅支持分类问题，也支持AWS上的分布式计算。
+
 ## 局部解决方案
 ### 特征工程
 1. Featuretools
@@ -105,9 +113,12 @@ https://github.com/ClimbsRocks/auto_ml
 9. HORD
 10. ENAS-pytorch
 
-### 参考链接
+### Reference
 
 [AutoML: The Next Wave of Machine Learning](https://heartbeat.fritz.ai/automl-the-next-wave-of-machine-learning-5494baac615f)
+
 [Automatic Machine Learning (AutoML) Landscape Survey](https://medium.com/georgian-impact-blog/automatic-machine-learning-aml-landscape-survey-f75c3ae3bbf2)
+
 [自动机器学习工具全景图](https://developer.aliyun.com/article/626865)
+
 [7 个AutoML库：应对机器学习的下一波浪潮](https://www.infoq.cn/article/luFB33Zy*WrHdRQh8Mo8)
