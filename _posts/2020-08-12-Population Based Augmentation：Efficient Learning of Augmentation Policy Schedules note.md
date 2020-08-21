@@ -17,7 +17,6 @@ tags:
 
 代码实现：利用[Tune](https://ray.readthedocs.io/en/latest/tune.html)框架在新数据集上运行 [PBA算法](https://github.com/arcelien/pba)
 
-<iframe src="//player.bilibili.com/player.html?aid=11442754&bvid=BV18x411h7rR&cid=18917974&page=19" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 ### References
 
