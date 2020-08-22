@@ -1,6 +1,6 @@
 ---
 layout:		post
-title:      Kubernetes介绍
+title:      Kubernetes学习笔记
 subtitle:	
 date:       2020-08-20
 author:     xuelin
