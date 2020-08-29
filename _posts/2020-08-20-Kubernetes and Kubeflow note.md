@@ -1,14 +1,48 @@
 ---
 layout:		post
-title:      Kubeflow学习笔记
+title:      Kubernetes and Kubeflow学习笔记
 subtitle:	
-date:       2020-08-21
+date:       2020-08-20
 author:     xuelin
 header-img: img/post-web.jpg
 catalog:    true
 tags:
+    - Kubernetes
     - Kubeflow
 ---
+
+# Kubernetes
+
+Kubernetes是一个完备的分布式系统支撑平台，具有完备的集群管理能力，多扩多层次的安全防护和准入机制、多租户应用支撑能力、透明的服务注册和发现机制、內建智能负载均衡器、强大的故障发现和自我修复能力、服务滚动升级和在线扩容能力、可扩展的资源自动调度机制以及多粒度的资源配额管理能力。
+
+Kubernetes优势:
+* 原生的资源隔离
+* 集群化自动化管理
+* 计算资源(CPU/GPU)自动调度
+* 对多种分布式存储的支持
+* 集成较为成熟的监控和告警
+
+### Kubernetes的组件
+
+![](/assets/15979701655701.jpg)
+
+![](/assets/15979088539080.jpg)
+
+* master 可以简单的理解为控制中心
+    * etcd:分布式k-v数据库，根据配置选择是cp还是ap, k8s只有api server 和etcd通讯， 其他组件均和api server通讯。
+    * api server:可以理解为etcd的前置过滤器，换一个视角，它和etcd类似于mysql和文件系统。
+    * controller manager: 核心，负责将现在的状态调整为etcd上应该的状态，包含了所有的实现逻辑。
+    * scheduler: 简单点说就是给一个pod找一个node。
+* slave 可以简单的理解为worker
+    * kubelet: 负责和master连接，注册node, listen-watch 本node的任务等。
+    * kube-proxy: 用于k8s service对象。
+    * 容器运行时: 除了docker，k8s还支持rkt等容器实现。
+
+### k8s集群的运行时的大致结构
+![](/assets/15979090036448.jpg)
+
+### Kubernetes 资源架构图
+![](/assets/15979977756740.jpg)
 
 # Kubeflow
 
@@ -174,7 +208,61 @@ NVIDIA Triton Inference Server是一项REST和GRPC服务，用于对TensorRT，T
 
 现在国外的Google、微软、亚马逊、Intel以及国内的阿里云、华为云、小米云、京东云、才云等等公司都在发力Kubeflow，并结合kubernetes对多种机器学习引擎进行多机多卡的大规模训练，这样可以做到对GPU资源的整合，并高效的提高GPU资源利用率，及模型训练的效率。并实现一站式服务，将机器学习服务上线的整个workflow都在Kubernetes平台实现。减轻机器学习算法同学的其它学习成本，专心搞算法。
 
+## Kubeflow上的Jupyter
+
+利用Kubeflow，每个用户或团队都将拥有自己的命名空间，在其中轻松运行工作负载。命名空间提供强大的安全保障与资源隔离机制。利用Kubernetes资源配额功能，平台管理员能够轻松限制个人或者团队用户的资源消耗上限，以保证资源调度的公平性。
+
+在Kubeflow部署完成之后，用户可以利用Kubeflow的中央仪表板启动notebook：
+
+![](/assets/15980785167462.jpg)
+
+Kubeflow的notebook管理UI：用户可以在这里查看并接入现有notebook，或者启动一个新的notebook。
+
+在Kubeflow UI中，用户可以通过选择Jupyter预设的Docker镜像、或者导入自定义镜像的URL来轻松启动新的notebook。接下来，用户需要设置对接该notebook的CPU与GPU数量，并在notebook中添加配置与密码参数以简化对外部库及数据库的访问。
+
+![](/assets/15980785529861.jpg)
+
+
+
+
+## 分布式训练加快训练速度
+
+分布式训练已经成为谷歌内部的基本规范，同时也是TensorFlow与PyTorch等深度学习框架当中最激动人心也最具吸引力的能力之一。
+
+谷歌当初之所以要打造Kubeflow项目，一大核心诉求就是充分利用Kubernetes以简化分布式训练流程。借助Kubernetes的自定义资源，Kubeflow得以显著降低TensorFlow与PyTorch上的分布式训练难度。用户需要首先定义一种TFJob或者PyTorch资源，如下所示。接下来，由定制化控制器负责扩展并管理所有单一进程，并通过配置实现进程之间的通信会话：
+
+```
+apiVersion: kubeflow.org/v1
+kind: TFJob
+metadata:
+name: mnist-train
+spec:
+tfReplicaSpecs:
+Chief:
+  replicas: 1
+    spec:
+      containers:
+        image: gcr.io/alice-dev/fairing-job/mnist
+        name: tensorflow
+Ps:
+  replicas: 1
+  template:
+    spec:
+      containers:
+        image: gcr.io/alice-dev/fairing-job/mnist
+        name: tensorflow
+Worker:
+  replicas: 10      
+    spec:
+      containers:
+        image: gcr.io/alice-dev/fairing-job/mnist
+        name: tensorflow
+```
+
+
 # References
+
+[Kubernetes官网](https://kubernetes.io/zh/)
 
 [kubeflow官网](https://www.kubeflow.org/docs/started/kubeflow-overview/)
 
