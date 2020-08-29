@@ -1,6 +1,6 @@
 ---
 layout:		post
-title:      Kubernetes and Kubeflow学习笔记
+title:      Kubernetes和Kubeflow学习笔记
 subtitle:	
 date:       2020-08-20
 author:     xuelin
@@ -114,6 +114,18 @@ Kubeflow将default-editor ServiceAccount分配给Jupyter notebook Pod。该服�
 
 总体而言，Kubeflow-hosted notebooks可以更好地与其他组件集成，同时提供notebook image的可扩展性。
 
+利用Kubeflow，每个用户或团队都将拥有自己的命名空间，在其中轻松运行工作负载。命名空间提供强大的安全保障与资源隔离机制。利用Kubernetes资源配额功能，平台管理员能够轻松限制个人或者团队用户的资源消耗上限，以保证资源调度的公平性。
+
+在Kubeflow部署完成之后，用户可以利用Kubeflow的中央仪表板启动notebook：
+
+![](/assets/15980785167462.jpg)
+
+Kubeflow的notebook管理UI：用户可以在这里查看并接入现有notebook，或者启动一个新的notebook。
+
+在Kubeflow UI中，用户可以通过选择Jupyter预设的Docker镜像、或者导入自定义镜像的URL来轻松启动新的notebook。接下来，用户需要设置对接该notebook的CPU与GPU数量，并在notebook中添加配置与密码参数以简化对外部库及数据库的访问。
+
+![](/assets/15980785529861.jpg)
+
 ## Pipelines
 
 Kubeflow的目的主要是为了简化在Kubernetes上运行机器学习任务的流程，最终希望能够实现一套完整可用的流水线, 来实现机器学习从数据到模型的一整套端到端的过程。 而pipeline是一个工作流平台，能够编译部署机器学习的工作流。
@@ -207,23 +219,6 @@ NVIDIA Triton Inference Server是一项REST和GRPC服务，用于对TensorRT，T
 ![](/assets/15978939891363.jpg)
 
 现在国外的Google、微软、亚马逊、Intel以及国内的阿里云、华为云、小米云、京东云、才云等等公司都在发力Kubeflow，并结合kubernetes对多种机器学习引擎进行多机多卡的大规模训练，这样可以做到对GPU资源的整合，并高效的提高GPU资源利用率，及模型训练的效率。并实现一站式服务，将机器学习服务上线的整个workflow都在Kubernetes平台实现。减轻机器学习算法同学的其它学习成本，专心搞算法。
-
-## Kubeflow上的Jupyter
-
-利用Kubeflow，每个用户或团队都将拥有自己的命名空间，在其中轻松运行工作负载。命名空间提供强大的安全保障与资源隔离机制。利用Kubernetes资源配额功能，平台管理员能够轻松限制个人或者团队用户的资源消耗上限，以保证资源调度的公平性。
-
-在Kubeflow部署完成之后，用户可以利用Kubeflow的中央仪表板启动notebook：
-
-![](/assets/15980785167462.jpg)
-
-Kubeflow的notebook管理UI：用户可以在这里查看并接入现有notebook，或者启动一个新的notebook。
-
-在Kubeflow UI中，用户可以通过选择Jupyter预设的Docker镜像、或者导入自定义镜像的URL来轻松启动新的notebook。接下来，用户需要设置对接该notebook的CPU与GPU数量，并在notebook中添加配置与密码参数以简化对外部库及数据库的访问。
-
-![](/assets/15980785529861.jpg)
-
-
-
 
 ## 分布式训练加快训练速度
 
