@@ -4,15 +4,15 @@ SEOTitle: 不是很呆D Blog
 header-img: img/home-bg-he.png
 email: xlwang@stu.xjtu.edu.cn
 description: "不是很呆D的博客"
-keyword: "Doutree, Lunn, Blog"
-url: "http://doutree.github.io"          # your host, for absolute URL
+keyword: "iErnest, Blog"
+url: "http://iernest.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/doutree/doutree.github.io.git" #code repository | 代码仓库
+github_repo: "https://github.com/iernest/iernest.github.io.git" #code repository | 代码仓库
 
 
 # Sidebar settings | 侧边栏设置
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "NLP AutoML DL ML"
+sidebar-about-description: "NLPer XJTUer"
 sidebar-avatar: /img/head.jpg      # 头像
 
 
@@ -20,8 +20,8 @@ sidebar-avatar: /img/head.jpg      # 头像
 
 
 # SNS settings | 社交网络设置
-# facebook_username: Doutree
-github_username: doutree
+# facebook_username: doutree
+github_username: iernest
 # zhihu_username: ao-tu-h2o
 csdn_username: qq_36459481
 
@@ -62,9 +62,9 @@ gitalk:
   enable: false    # 是否开启Gitalk评论
   clientID: 1675c22923c74e399e8e                            #生成的clientID
   clientSecret: 9d7a97297ac73a483211f95a15197d8f53039a80    #生成的clientSecret
-  repo: doutree.github.io    #仓库名称
-  owner: Doutree    # github用户名
-  admin: Doutree
+  repo: iernest.github.io    #仓库名称
+  owner: iernest    # github用户名
+  admin: iernest
   distractionFreeMode: true # 是否启用类似FB的阴影遮罩
 
 
@@ -89,7 +89,7 @@ service-worker: true
 friends: [
     {
         title: "GitHub·doutree",
-        href: "https://github.com/doutree"
+        href: "https://github.com/iernest"
     },{
         title: "CSDN·不是很呆",
         href: "https://blog.csdn.net/qq_36459481"
