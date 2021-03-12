@@ -88,7 +88,7 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "GitHub·doutree",
+        title: "GitHub·iErnest",
         href: "https://github.com/iernest"
     },{
         title: "CSDN·不是很呆",
